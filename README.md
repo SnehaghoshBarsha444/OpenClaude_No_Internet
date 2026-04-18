@@ -25,6 +25,23 @@ To prevent crashes on limited hardware, this version implements:
 
 ---
 
+## 🔋 Mobile Hardware Control (Termux API)
+OpenClaude comes with a toolkit to interact with your phone's hardware. These tools work on almost all Android devices without needing Root or Shizuku.
+
+### 🛠 Installation for Hardware Tools:
+To enable these features, you must:
+1. Run: `pkg install termux-api`
+2. Install the **Termux:API** app from F-Droid or Play Store.
+
+### 🌟 Available Capabilities:
+- **System Status:** Check battery percentage, WiFi state, and location.
+- **Notifications:** Send high-priority system notifications.
+- **Voice:** Use Text-to-Speech (TTS) to make the AI speak.
+- **Communication:** Send SMS messages.
+- **Hardware:** Control device vibration and take photos via camera.
+
+---
+
 ## 🗑️ How to Uninstall
 
 ### From Termux:
