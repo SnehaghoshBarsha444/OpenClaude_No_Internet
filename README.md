@@ -91,9 +91,10 @@ To run this inside a Linux distro (like Ubuntu or Debian or Arch) for better com
    - Start `ollama serve` in the main Termux session.
    - Inside the `proot-distro` shell, point the URL to the Termux IP:
    ```bash
-   export OPENAI_BASE_URL=http://127.0.0.1:11434/v1
-   export CLAUDE_CODE_USE_OPENAI=1
-   export OPENAI_API_KEY=ollama
-   export OPENAI_MODEL=gemma4:e2b
+   echo 'export OPENAI_BASE_URL=http://127.0.0.1:11434/v1' >> ~/.bashrc
+   echo 'export CLAUDE_CODE_USE_OPENAI=1' >> ~/.bashrc
+   echo 'export OPENAI_API_KEY=ollama' >> ~/.bashrc
+   echo 'export OPENAI_MODEL=qwen3.5:0.8b' >> ~/.bashrc
+   source ~/.bashrc
    npx openclaude
    ```
